@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #003366, #3399ff, #00b3b3);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-style: oblique;
+  font-size: 15px;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+  text-shadow: 0 0 10px #ffcc00;
+}
+
+.hero {
+  height: 100vh;
+  background: url('hero.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  animation: fadeIn 2s ease;
+  background: #ccc;
+}
+
+.hero-content {
+  background: rgba(0, 0, 50, 0.718);
+  padding: 50px;
+  border-radius: 30px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  color: gray;
+  font-style: italic;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.btn {
+  background: linear-gradient(90deg, #ff6600, #ffcc00);
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  transition: 0.4s;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+.about {
+  padding: 100px 50px;
+  background: beige;
+  text-align: center;
+  color: #003366;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #007acc;
+  margin-bottom: 20px;
+  animation: fadeUp 1.5s ease;
+}
+
+.about p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.mission {
+  margin-top: 40px;
+}
+
+.mission h3 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.mission ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.mission li {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.testimonials {
+  margin-top: 70px;
+  background: linear-gradient(120deg, #e6f7ff, #fff0cc);
+  padding: 60px 30px;
+  border-radius: 20px;
+  animation: fadeUp 2s ease;
+}
+
+.testimonials h2 {
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #003366;
+}
+
+.stars {
+  color: #ffcc00;
+  margin: 10px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+.why {
+  background: linear-gradient(120deg, #e6f7ff, #fff0cc);
+  padding: 100px 50px;
+  text-align: center;
+  animation: fadeUp 2s ease;
+  font-size: 20px;
+}
+.why h2 {
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.reasons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  top: 0;
+}
+
+.reason-card {
+  background: white;
+  border-radius: 15px;
+  width: 250px;
+  padding: 20px;
+  transition: 0.4s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.reason-card:hover {
+  background: #007acc;
+  color: white;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.services {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto; 
+  font-weight: bold;
+}
+
+.services h3 {
+  color: #ff6600;
+  margin-bottom: 10px;
+
+}
+
+.services ul {
+  list-style: none;
+}
+
+.services li {
+  margin-bottom: 9px;
+  font-size: 1.1rem;
+}
+
+.gallery {
+  background: aliceblue;
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: #003366;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00b3b3;
+}
+
+.contact {
+  background: linear-gradient(90deg, #003366, #007acc, #00b3b3);
+  color: white;
+  text-align: center;
+  padding: 80px 30px;
+}
+
+.contact h2 {
+  color: #ffcc00;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.socials a {
+  color: #ffcc00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+.socials a:hover {
+  text-shadow: 0 0 10px #ffcc00;
+  color: #fff;
+  text-decoration: underline;
+}
+footer {
+  background: #001f3f;
+  color: #ccc;
+  text-align: center;
+  padding: 25px;
+}
+
+.footer-links a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes float {
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+}
+
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+@keyframes float {
+  0%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-10px);}
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  .reasons {
+    flex-direction: column;
+  }
+  .testimonial-container {
+    flex-direction: column;
+  }
+}
